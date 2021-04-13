@@ -1,0 +1,14 @@
+.square {
+    background-color: transparent;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #BDBDBD;
+    cursor: pointer;
+    font-size: 46px;
+    font-weight: bold;
+
+    &_winner {
+        background-color: #BDBDBD;
+        color: #fff;
+    }
+}
