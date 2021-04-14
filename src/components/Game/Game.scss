@@ -4,10 +4,22 @@
     &__wrap {
         display: flex;
         align-items: flex-start;
+
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__info {
         padding-left: 150px;
+        width: 100%;
+
+        @media (max-width: 768px) {
+            padding-top: 50px;
+            padding-left: 0;
+        }
     }
 
     &__status {
@@ -18,11 +30,20 @@
 }
 
 .steps {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
+
+    @media (max-width: 768px) {
+        margin: 0 auto;
+    }
     
     &__moves {
         display: flex;
         flex-wrap: wrap;
+
+        @media (max-width: 460px) {
+            flex-direction: column;
+        }
     }
 
     &__sort {
